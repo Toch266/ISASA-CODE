@@ -1,0 +1,65 @@
+/* Fondo de la página completa */
+body {
+    background-color: #18191a;
+    color: white;
+}
+
+/* Fondo de la navbar */
+.navbar {
+    background-color: #18191a;
+    padding: 10px 20px;
+}
+
+/* Estilos para la barra de búsqueda (botón más largo) */
+.search-bar {
+    background-color: #b2b09b;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    width: 400px; /* Ajusta el ancho de la barra de búsqueda */
+}
+
+.search-bar::placeholder {
+    color: #333;
+}
+
+/* Botones personalizados con bordes redondeados y tamaños iguales */
+.btn-custom-new {
+    background-color: #43aa8b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10%;
+    width: 150px; /* Ajusta el ancho de los botones */
+}
+
+.btn-custom-artistas {
+    background-color: #ff6f59;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    width: 150px; /* Mismo ancho */
+}
+
+.btn-custom-random {
+    background-color: #ef3054;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    width: 150px; /* Mismo ancho */
+}
+
+/* Botones pequeños (hamburguesa y logo de la rata) */
+.btn-small {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #b2b09b;
+    border: none;
+}
