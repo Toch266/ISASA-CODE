@@ -1,0 +1,129 @@
+/* Fondo de la página completa */
+body {
+    background-color: #18191a;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat en todo el sitio */
+}
+
+/* Fondo de la navbar */
+.navbar {
+    background-color: #18191a;
+    padding: 10px 15px; /* Reducimos el padding para hacer todo más compacto */
+}
+
+/* Contenedor principal ajustado para alinear elementos a la izquierda y derecha */
+.container-fluid {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos izquierda y derecha estén separados uniformemente */
+    align-items: center; /* Alinea todos los elementos en el centro verticalmente */
+    flex-wrap: nowrap; /* Evita que los elementos se superpongan o salten de línea */
+}
+
+/* Contenedor de los botones a la izquierda */
+.d-flex.align-items-center {
+    display: flex;
+    flex-wrap: nowrap; /* Asegura que los elementos estén alineados horizontalmente */
+    gap: 10px; /* Ajusta el espacio entre los botones */
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    background-color: #3b3a30;
+    border: none;
+    color: #ffffff;
+    font-weight: 600; /* Hace el texto más grueso */
+    padding: 8px 15px; /* Reducimos el padding para hacer la barra más pequeña */
+    width: 100%; /* Se adapta al tamaño del contenedor */
+    max-width: 350px; /* Reducimos el ancho máximo */
+    min-width: 180px; /* Reducimos el ancho mínimo */
+    font-size: 13px; /* Reducimos el tamaño del texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+    border-radius: 50px; /* Hacer la barra de búsqueda redonda */
+    margin-right: 12px; /* Espacio entre la barra de búsqueda y los botones */
+}
+
+.search-bar::placeholder {
+    color: #cccccc;
+    font-weight: 600; /* Hace el texto del placeholder más grueso */
+    font-size: 13px; /* Ajustamos el tamaño del placeholder */
+}
+
+/* Botones personalizados con la nueva fuente */
+.btn-custom-new, .btn-custom-artistas, .btn-custom-random {
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los botones */
+    font-size: 13px; /* Reducimos el tamaño del texto en los botones */
+    font-weight: 700;
+    background-color: #43aa8b; /* Cambia según el botón */
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Reducimos el padding */
+    width: 130px; /* Reducimos el ancho de los botones */
+    height: 40px; /* Reducimos la altura para que sean más pequeños */
+    border-radius: 50px; /* Hacer los botones completamente redondos */
+    transition: background-color 0.3s ease; /* Transición suave */
+    text-decoration: none; /* Elimina el subrayado del texto en los botones */
+    text-align: center; /* Asegura que el texto esté centrado */
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
+
+/* Botón Nuevo */
+.btn-custom-new {
+    background-color: #43aa8b;
+}
+
+.btn-custom-new:hover {
+    background-color: #388e7a; /* Cambio de color al hover */
+}
+
+/* Botón Artistas */
+.btn-custom-artistas {
+    background-color: #ff6f59;
+}
+
+.btn-custom-artistas:hover {
+    background-color: #e66450; /* Cambio de color al hover */
+}
+
+/* Botón Random */
+.btn-custom-random {
+    background-color: #ef3054;
+}
+
+.btn-custom-random:hover {
+    background-color: #d62a45; /* Cambio de color al hover */
+}
+
+/* Botones pequeños (hamburguesa y logo de la rata) */
+.btn-small {
+    width: 40px; /* Hacemos los botones pequeños aún más pequeños */
+    height: 40px; /* Hacemos los botones pequeños más pequeños */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #b2b09b;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Montserrat', sans-serif; /* Aplica Montserrat a los botones pequeños */
+    border-radius: 50%; /* Hacer los botones completamente redondos */
+}
+
+/* Hacer que el ícono de menú hamburguesa sea más grueso */
+.bi-list {
+    font-size: 18px; /* Reducimos el tamaño del ícono */
+    font-weight: bold; /* Aumenta el grosor del ícono */
+}
+
+/* Contenedor de los botones pequeños */
+.d-flex.align-items-center .btn-small {
+    margin-left: 8px; /* Espacio entre el menú y el logo de la rata */
+    display: inline-flex; /* Asegura que estén uno al lado del otro */
+}
+
+/* Efecto hover en los botones pequeños */
+.btn-small:hover {
+    background-color: #9b9b9b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
